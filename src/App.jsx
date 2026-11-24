@@ -3,6 +3,7 @@ import Login from "./pages/Login";
 import Registro from "./pages/Registro";
 import SubirCV from "./pages/SubirCV";
 import Progreso from "./pages/Progreso";
+import Aprobar from "./pages/Aprobar";
 
 // Componente para proteger rutas privadas
 function RutaProtegida({ children }) {
@@ -30,6 +31,14 @@ export default function App() {
           element={
             <RutaProtegida>
               <Progreso />
+            </RutaProtegida>
+          }
+        />
+        <Route
+          path="/aprobar"
+          element={
+            <RutaProtegida>
+              <Aprobar />
             </RutaProtegida>
           }
         />
