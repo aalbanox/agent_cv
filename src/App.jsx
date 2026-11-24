@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Registro from "./pages/Registro";
 import SubirCV from "./pages/SubirCV";
+import Progreso from "./pages/Progreso";
 
 // Componente para proteger rutas privadas
 function RutaProtegida({ children }) {
@@ -21,6 +22,14 @@ export default function App() {
           element={
             <RutaProtegida>
               <SubirCV />
+            </RutaProtegida>
+          }
+        />
+        <Route
+          path="/progreso"
+          element={
+            <RutaProtegida>
+              <Progreso />
             </RutaProtegida>
           }
         />
